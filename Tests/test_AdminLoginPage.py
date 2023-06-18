@@ -1,5 +1,5 @@
 import pytest
-from ..Pages.AdminPage import AdminPage
+from ..Pages.AdminLoginPage import AdminPage
 from ..Config.config import TestData
 from ..Tests.test_base import BaseTest
 from time import sleep
