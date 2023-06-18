@@ -15,9 +15,6 @@ class Test_AdminPanel(BaseTest):
     def test_login_admin(self):
         self.adminpage = AdminPage(self.driver)
         self.adminpage.do_login_admin(TestData.ADMIN_USER, TestData.ADMIN_PASSWORD)
-
-        sleep(2)
-
         login_header = self.adminpage.get_header_admin_panel()
         assert TestData.ADMIN_PANEL_HEADER == login_header
         
