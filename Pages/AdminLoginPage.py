@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 from .BasePage import BasePage
+from .AdminDBoardPage import AdminDBoardPage
+
 from ..Config.config import TestData
 
 
@@ -28,6 +30,7 @@ class AdminPage(BasePage):
         self.do_send_keys(self.USERNAME, username)
         self.do_send_keys(self.PASSWORD, password)
         self.do_click(self.LOGIN_BUTTON)
+        return AdminDBoardPage(self.driver)
 
     def get_header_admin_panel(self):
         element = self.get_elment_text(self.ADMIN_PANEL)
