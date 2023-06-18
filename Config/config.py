@@ -12,3 +12,8 @@ class TestData():
     BOOKING_NUMBER = '656656565464656'
     BOOKING_SUBJECT = f'Test subject - {random.randint(0,500)}'
     BOOKING_MESSAGE = 'These is the body'*10
+
+    ADMIN_LOGIN_HEADER = 'Log into your account'
+    ADMIN_USER = 'admin'
+    ADMIN_PASSWORD = 'password'
+    ADMIN_PANEL_HEADER = 'Logout'
