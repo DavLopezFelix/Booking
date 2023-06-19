@@ -48,6 +48,7 @@ class AdminDBoardPage(BasePage):
                                         f'//div[@class="row detail read-false"][{self.i+1}]/div[2]')
                     self.do_click(SELECTED_SUBJECT_BOOKING)
                     sleep(1)
+                    break
 
     def is_visisble_the_new_popup(self):
         return self.is_visible(self.POPUP_MESSAGE)
@@ -84,8 +85,4 @@ class AdminDBoardPage(BasePage):
         element_value = self.get_attr_value(SELECTED_BOOKING, ATTR_TYPE)
         return element_value
 
-    
-
-
-
-        
+       
