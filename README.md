@@ -16,8 +16,8 @@ Follow these steps to run the scripts:
 1.  Clone the repository to your local directory.
 2.  Open the local directory using your preferred code editor, such as Visual Studio Code (VSC).
 3.  Install all the required dependencies by running the following command:  `pip install -r requirements.txt`.
-4.  Execute the test file by running the command:  `pytest Tests/test_BookingPage.py -v -n -2 --html=./BookingReport.html`.
-5. Execute the test file by running the command:  `pytest Tests/test_AdminDBoardPage.py -n -2 -v --html=./AdminPanelReport.html`.
+4.  Execute the test file by running the command:  `pytest Tests/test_BookingPage.py -v -n 2 --html=./BookingReport.html`.
+5. Execute the test file by running the command:  `pytest Tests/test_AdminDBoardPage.py -n 2 -v --html=./AdminPanelReport.html`.
 6.  The test reports will be generated as  `BookingReport.html` and `AdminPanelReport.html` .
 
 By following these steps, you will be able to clone the repository, set up the necessary dependencies, and run the test file using pytest. The resulting test report will be saved as  `BookingReport.html` and `AdminPanelReport.html`.
