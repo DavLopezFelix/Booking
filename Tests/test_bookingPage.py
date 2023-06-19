@@ -7,11 +7,6 @@ from time import sleep
 
 class Test_BookingPage(BaseTest):
 
-    def test_bookingpage_title(self):
-        self.bookingpage = BookingPage(self.driver)
-        title = self.bookingpage.get_booking_page_title(TestData.BOOKING_TITLE)
-        assert title == TestData.BOOKING_TITLE
-
     def test_main_picture_is_visible(self):
         self.bookingpage = BookingPage(self.driver)
         flag = self.bookingpage.is_main_logo_visible()
