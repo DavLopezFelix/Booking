@@ -11,7 +11,7 @@ class TestData():
     BOOKING_EMAIL = 'david@ho.com'
     BOOKING_NUMBER = '656656565464656'
     #BOOKING_SUBJECT = f'Test subject - {random.randint(1, 100)}'
-    BOOKING_SUBJECT = f'Test subject - 115'
+    BOOKING_SUBJECT = f'Test subject - 116'
 
     BOOKING_MESSAGE = 'These is the body'*10
 

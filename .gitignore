@@ -4,3 +4,5 @@ assets/
 __pycache__/
 hubSpot.html
 test
+AdminPanelReport.html
+BookingReport.html
