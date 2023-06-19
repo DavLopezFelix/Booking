@@ -39,6 +39,17 @@ class BasePage:
         elements = WebDriverWait(self.driver, 10).until(EC.visibility_of_all_elements_located(by_locator))
         return elements
 
+    def get_attr_value(self, by_locator, attribute):
+        element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
+        return element.get_attribute(attribute)
+    
+    def it_not_exist(self, by_locator):
+        try:
+            element = WebDriverWait(self.driver, 2).until(EC.visibility_of_element_located(by_locator))
+            return False
+        except:
+            return True
+
         
 
 

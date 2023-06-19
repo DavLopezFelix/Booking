@@ -11,7 +11,7 @@ class TestData():
     BOOKING_EMAIL = 'david@ho.com'
     BOOKING_NUMBER = '656656565464656'
     #BOOKING_SUBJECT = f'Test subject - {random.randint(1, 100)}'
-    BOOKING_SUBJECT = f'Test subject - 105'
+    BOOKING_SUBJECT = f'Test subject - 114'
 
     BOOKING_MESSAGE = 'These is the body'*10
 
@@ -19,4 +19,6 @@ class TestData():
     ADMIN_USER = 'admin'
     ADMIN_PASSWORD = 'password'
     ADMIN_PANEL_HEADER = 'Logout'
+
+    ALREADY_READ_MESSAGE = "read-true"
 

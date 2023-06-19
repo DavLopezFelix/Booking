@@ -36,16 +36,16 @@ class AdminDBoardPage(BasePage):
     
     def select_the_booking(self, subject, name):
         elements = self.get_elements(self.SUBJECT_NOREAD_BOOKINGS)
-        for i, element_subject in enumerate(elements):
+        for self.i, element_subject in enumerate(elements):
             if subject in element_subject.text:
                 SELECTED_NAME_BOOKING = (By.XPATH, \
-                                        f'//div[@class="row detail read-false"][{i+1}]/div[1]')
+                                        f'//div[@class="row detail read-false"][{self.i+1}]/div[1]')
                 element_name = self.get_elment_text(SELECTED_NAME_BOOKING)
 
                 if name in element_name:
                     print("I found it!")
                     SELECTED_SUBJECT_BOOKING = (By.XPATH, \
-                                        f'//div[@class="row detail read-false"][{i+1}]/div[2]')
+                                        f'//div[@class="row detail read-false"][{self.i+1}]/div[2]')
                     self.do_click(SELECTED_SUBJECT_BOOKING)
                     sleep(1)
 
@@ -54,7 +54,6 @@ class AdminDBoardPage(BasePage):
     
     def get_from(self):
         element = self.get_innerHTML_text(self.FROM)
-        print(element)
         return element
     
     def get_phone(self):
@@ -75,6 +74,16 @@ class AdminDBoardPage(BasePage):
 
     def close_popup(self):
         self.do_click(self.CLOSE_BUTTON)
+
+    def check_not_exist_popup(self):
+        return self.it_not_exist(self.POPUP_MESSAGE)
+
+    def get_attr_read_message(self):
+        SELECTED_BOOKING = (By.XPATH, f'//div[@class="messages"]/div[{self.i + 2}]')
+        ATTR_TYPE = "class"
+        element_value = self.get_attr_value(SELECTED_BOOKING, ATTR_TYPE)
+        return element_value
+
     
 
 
