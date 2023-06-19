@@ -20,6 +20,6 @@ Follow these steps to run the scripts:
 5. Execute the test file by running the command:  `pytest Tests/test_AdminDBoardPage.py -n 2 -v --html=./AdminPanelReport.html`.
 6.  The test reports will be generated as  `BookingReport.html` and `AdminPanelReport.html` .
 
-By following these steps, you will be able to clone the repository, set up the necessary dependencies, and run the test file using pytest. The resulting test report will be saved as  `BookingReport.html` and `AdminPanelReport.html`.
+By following these steps, you will be able to clone the repository, set up the necessary dependencies, and run the test file using pytest. The tests will run in parallel, with two browsers open to execute each test case. The resulting test report will be saved as  `BookingReport.html` and `AdminPanelReport.html`.
 
 Feel free to explore the repository, modify the scripts, and add more test cases according to your testing requirements.
