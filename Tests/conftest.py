@@ -14,6 +14,7 @@ def init_driver(request):
     if request.param == 'firefox':
         serv_obj = Service(TestData.FIREFOX_EXECUTABLE_PATH)
         web_driver = webdriver.Firefox(service = serv_obj)
+        
     request.cls.driver =  web_driver
     yield
     web_driver.close()

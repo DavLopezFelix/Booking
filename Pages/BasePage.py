@@ -18,6 +18,10 @@ class BasePage:
     def get_elment_text(self, by_locator):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
         return element.text
+    
+    def get_innerHTML_text(self, by_locator):
+        element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
+        return element.get_attribute("innerHTML")
 
     def is_visible(self, by_locator):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
@@ -30,6 +34,11 @@ class BasePage:
     def get_quantity_elements(self, by_locator):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_all_elements_located(by_locator))
         return len(element)
+    
+    def get_elements(self, by_locator):
+        elements = WebDriverWait(self.driver, 10).until(EC.visibility_of_all_elements_located(by_locator))
+        return elements
+
         
 
 
