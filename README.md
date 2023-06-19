@@ -1,6 +1,6 @@
 # Booking testing
 
-This repository contains scripts that utilize the Page Object Model (POM) to test the book of hotel reservation and verifiy the correct manage of the reservation from Admin Gotel panel in Google Chrome and Mozilla Firefox browsers. POM is a design pattern that enhances code maintainability and test efficiency by separating page elements and actions into reusable objects. By implementing POM, these scripts offer an organized approach to automated testing.
+This repository contains scripts that utilize the Page Object Model (POM) to test hotel reservation and verify the correct manage of the reservation from Admin panel in Google Chrome and Mozilla Firefox browsers. POM is a design pattern that enhances code maintainability and test efficiency by separating page elements and actions into reusable objects. By implementing POM, these scripts offer an organized approach to automated testing.
 
 ## Prerequisites
 
